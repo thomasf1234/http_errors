@@ -1,0 +1,175 @@
+HTTPErrors:
+  HTTPExceptions:
+    Informational:
+      Continue:
+        http_code: 100
+        message: Continue
+      SwitchingProtocols:
+        http_code: 101
+        message: Switching Protocols
+      Processing:
+        http_code: 102
+        message: Processing
+    Success:
+      OK:
+        http_code: 200
+        message: OK
+      Created:
+        http_code: 201
+        message: Created
+      Accepted:
+        http_code: 202
+        message: Accepted
+      NonAuthoritativeInformation:
+        http_code: 203
+        message: Non-Authoritative Information
+      NoContent:
+        http_code: 204
+        message: No Content
+      ResetContent:
+        http_code: 205
+        message: Reset Content
+      PartialContent:
+        http_code: 206
+        message: Partial Content
+      MultiStatus:
+        http_code: 207
+        message: Multi-Status
+    Redirection:
+      MultipleChoices:
+        http_code: 300
+        message: Multiple Choices
+      MovedPermanently:
+        http_code: 301
+        message: Moved Permanently
+      Found:
+        http_code: 302
+        message: Found
+      SeeOther:
+        http_code: 303
+        message: See Other
+      NotModified:
+        http_code: 304
+        message: Not Modified
+      UseProxy:
+        http_code: 305
+        message: Use Proxy
+      SwitchProxy:
+        http_code: 306
+        message: Switch Proxy
+      TemporaryRedirect:
+        http_code: 307
+        message: Temporary Redirect
+    Client_Error:
+      BadRequest:
+        http_code: 400
+        message: Bad Request
+      Unauthorized:
+        http_code: 401
+        message: Unauthorized
+      PaymentRequired:
+        http_code: 402
+        message: Payment Required
+      Forbidden:
+        http_code: 403
+        message: Forbidden
+      ResourceNotFound:
+        http_code: 404
+        message: Resource Not Found
+      MethodNotAllowed:
+        http_code: 405
+        message: Method Not Allowed
+      NotAcceptable:
+        http_code: 406
+        message: Not Acceptable
+      ProxyAuthenticationRequired:
+        http_code: 407
+        message: Proxy Authentication Required
+      RequestTimeout:
+        http_code: 408
+        message: Request Timeout
+      Conflict:
+        http_code: 409
+        message: Conflict
+      Gone:
+        http_code: 410
+        message: Gone
+      LengthRequired:
+        http_code: 411
+        message: Length Required
+      PreconditionFailed:
+        http_code: 412
+        message: Precondition Failed
+      RequestEntityTooLarge:
+        http_code: 413
+        message: Request Entity Too Large
+      RequestURITooLong:
+        http_code: 414
+        message: Request-URI Too Long
+      UnsupportedMediaType:
+        http_code: 415
+        message: Unsupported Media Type
+      RequestedRangeNotSatisfiable:
+        http_code: 416
+        message: Requested Range Not Satisfiable
+      ExpectationFailed:
+        http_code: 417
+        message: Expectation Failed
+      ImATeapot:
+        http_code: 418
+        message: "I'm A Teapot"
+      TooManyConnectionsFromThisIP:
+        http_code: 421
+        message: Too Many Connections From This IP
+      UnprocessableEntity:
+        http_code: 422
+        message: Unprocessable Entity
+      Locked:
+        http_code: 423
+        message: Locked
+      FailedDependency:
+        http_code: 424
+        message: Failed Dependency
+      UnorderedCollection:
+        http_code: 425
+        message: Unordered Collection
+      UpgradeRequired:
+        http_code: 426
+        message: Upgrade Required
+      RetryWith:
+        http_code: 449
+        message: Retry With
+      BlockedByWindowsParentalControls:
+        http_code: 450
+        message: Blocked By Windows Parental Controls
+    Server_Error:
+      InternalServerError:
+        http_code: 500
+        message: Internal Server Error
+      NotImplemented:
+        http_code: 501
+        message: Not Implemented
+      BadGateway:
+        http_code: 502
+        message: Bad Gateway
+      ServiceUnavailable:
+        http_code: 503
+        message: Service Unavailable
+      GatewayTimeout:
+        http_code: 504
+        message: Gateway Timeout
+      HTTPVersionNotSupported:
+        http_code: 505
+        message: HTTP Version Not Supported
+      VariantAlsoNegotiates:
+        http_code: 506
+        message: Variant Also Negotiates
+      InsufficientStorage:
+        http_code: 507
+        message: Insufficient Storage
+      BandwidthLimitExceeded:
+        http_code: 509
+        message: Bandwidth Limit Exceeded
+      NotExtended:
+        http_code: 510
+        message: Not Extended

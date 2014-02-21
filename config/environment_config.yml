@@ -1,0 +1,2 @@
+development: &development
+  http_exceptions_file_location: '/home/fpdev/http_error_handling/config/http_exceptions_definitions.yml'

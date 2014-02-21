@@ -1,0 +1,30 @@
+request1=Typhoeus::Request.new("localhost:3005/payment_cycles/1/sum", followlocation: true)
+request2=Typhoeus::Request.new("localhost:3005/payment_cycles/2/sum", followlocation: true)
+request3=Typhoeus::Request.new("localhost:3005/payment_cycles/3/sum", followlocation: true)
+
+hydra = Typhoeus::Hydra.new
+requests = (1..5).map{ |i| Typhoeus::Request.new("localhost:3005/payment_cycles/#{i}/sum", userpwd: "foo:bar") }
+requests.each {|request| hydra.queued_requests << request }
+hydra.run
+requests.collect{ |request| JSON.parse(request.response.response_body) } 
+
+
+ENVIRONMENT_CONFIG['payment_service']['url']+"/payment_cycles/#{i}/sum"
+
+
+
+
+RestClient::Request.new(:method => :get, :url => 'localhost:3005/payment_cycles/1/sum')
+
+requests = (1..5).map{ |i| RestClient::Request.new(:method => :get, :url => "localhost:3005/payment_cycles/#{i}/sum") }
+
+
+
+Typhoeus::Request.new(params)
+instantiates and stores params as instance var
+instantiates EasyFactory with self 
+
+
+
+http://luxsci.com/blog/how-does-secure-socket-layer-ssl-or-tls-work.html
+http://hans.io/blog/2014/02/19/postgresql_connection/index.html
